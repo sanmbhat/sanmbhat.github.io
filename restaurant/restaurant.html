@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Restaurent</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/angular.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+        $(document).ready(function () {
+            var options = {
+                zoom: 4,
+                center: new google.maps.LatLng(12.9716, 77.5946),
+                title: "Bangalore"
+            }
+            var map = new google.maps.Map(document.getElementById('map'), options);
+
+        })
+    </script>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/main/main.css" rel="stylesheet" />
+    <link href="style/restaurant.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="nav navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rest-menu-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../default.html"><span class="glyphicon glyphicon-home"></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="rest-menu-items">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="restaurant.html">Home</a></li>
+                    <li><a href="#aboutus"><span class="glyphicon glyphicon-info-sign"></span> About Us</a></li>
+                    <li><a href="menu.html"><span class="glyphicon glyphicon-cutlery"></span> Menu</a></li>
+                    <li><a href="#contact"><span class="glyphicon glyphicon-phone-alt"></span> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="my-carousel" class="carousel slide" data-ride="carousel" data-pause="hover">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#my-carousel" data-slide-to="1"></li>
+                <li data-target="#my-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img alt="First slide" src="http://placehold.it/1200x675&text=First+slide">
+                    <div class="carousel-caption hidden-sm hidden-xs">
+                        <h3>Caption heading 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img alt="Second slide" src="http://placehold.it/1200x675&text=Second+slide">
+                    <div class="carousel-caption hidden-sm hidden-xs">
+                        <h3>Caption heading 2</h3>
+                        <p>Morbi eget libero quis metus consectetur semper.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img alt="Third slide" src="http://placehold.it/1200x675&text=Third+slide">
+                    <div class="carousel-caption hidden-sm hidden-xs">
+                        <h3>Caption heading 3</h3>
+                        <p>Suspendisse ullamcorper massa eget eleifend iaculis.</p>
+                    </div>
+                </div>
+            </div>
+        </div><br/>
+        <div class="box">
+            <h3 id="aboutus">About Us</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div style="height: 1500px;"></div>
+        <div class="box">
+            <h3 id="contact">Conact</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="tel:+917259159010"><span class="glyphicon glyphicon-phone"></span> 7259159010</a><br/>
+                    <a href="mailto:santosh.bhat87@gmail.com"><span class="glyphicon glyphicon-envelope"></span> santosh.bhat87@gmail.com</a>
+                </div>
+                <div class="col-md-6 col-md-6-right">
+                    <strong>Address:</strong><br/>
+                    #123<br/>Unknown Road,<br/>Unknown area<br/>Bangalore-XX
+                </div>
+            </div>
+            <div class="row">
+                <div id="map" style="height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div class="static-up">
+            <span class="glyphicon glyphicon-menu-up"></span>
+        </div>
+    </a>
+</body>
+</html>
